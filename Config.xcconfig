@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  Swifty Companion
+//
+//  Created by Тетерин Даниил Владимирович on 02.02.2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+INTRA_SECRET = 168b84705b8a37ba03b19202353dd11fa114da3e046e52ea6b8f33a5bc71c647
+INTRA_UID = 2825616ef7efe502abe992985bc2270710cc362b7eb969ec7915d3a189f0af69

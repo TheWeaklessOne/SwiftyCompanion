@@ -3,325 +3,212 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4246C049268B13F2009C2497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246C048268B13F2009C2497 /* AppDelegate.swift */; };
-		4246C04B268B13F2009C2497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246C04A268B13F2009C2497 /* SceneDelegate.swift */; };
-		4246C04D268B13F2009C2497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246C04C268B13F2009C2497 /* ViewController.swift */; };
-		4246C050268B13F2009C2497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4246C04E268B13F2009C2497 /* Main.storyboard */; };
-		4246C052268B13F4009C2497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246C051268B13F4009C2497 /* Assets.xcassets */; };
-		4246C055268B13F4009C2497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4246C053268B13F4009C2497 /* LaunchScreen.storyboard */; };
-		4246C060268B13F4009C2497 /* Swifty_CompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246C05F268B13F4009C2497 /* Swifty_CompanionTests.swift */; };
-		4246C06B268B13F4009C2497 /* Swifty_CompanionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246C06A268B13F4009C2497 /* Swifty_CompanionUITests.swift */; };
+		D3237C9A27AA805000A67E20 /* Swifty_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */; };
+		D3237C9C27AA805000A67E20 /* SearchLogins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3237C9B27AA805000A67E20 /* SearchLogins.swift */; };
+		D3237C9E27AA805200A67E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3237C9D27AA805200A67E20 /* Assets.xcassets */; };
+		D3237CA127AA805200A67E20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3237CA027AA805200A67E20 /* Preview Assets.xcassets */; };
+		D3237CAB27AA83D100A67E20 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = D3237CAA27AA83D100A67E20 /* OAuth2 */; };
+		D34F7CC027BC3F20004FB8A4 /* Proxima-Soft-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D34F7CBE27BC3F20004FB8A4 /* Proxima-Soft-Bold.otf */; };
+		D34F7CC127BC3F20004FB8A4 /* Proxima-Soft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D34F7CBF27BC3F20004FB8A4 /* Proxima-Soft-Regular.otf */; };
+		D3B6D27B27D7F4D000DB0C86 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */; };
+		D3B6D27D27D7F51200DB0C86 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27C27D7F51200DB0C86 /* Styles.swift */; };
+		D3B6D27F27D8BE1B00DB0C86 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4246C05C268B13F4009C2497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4246C03D268B13F2009C2497 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4246C044268B13F2009C2497;
-			remoteInfo = "Swifty Companion";
-		};
-		4246C067268B13F4009C2497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4246C03D268B13F2009C2497 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4246C044268B13F2009C2497;
-			remoteInfo = "Swifty Companion";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4246C045268B13F2009C2497 /* Swifty Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4246C048268B13F2009C2497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4246C04A268B13F2009C2497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4246C04C268B13F2009C2497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4246C04F268B13F2009C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4246C051268B13F4009C2497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4246C054268B13F4009C2497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4246C056268B13F4009C2497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4246C05B268B13F4009C2497 /* Swifty CompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swifty CompanionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4246C05F268B13F4009C2497 /* Swifty_CompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_CompanionTests.swift; sourceTree = "<group>"; };
-		4246C061268B13F4009C2497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4246C066268B13F4009C2497 /* Swifty CompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swifty CompanionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4246C06A268B13F4009C2497 /* Swifty_CompanionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_CompanionUITests.swift; sourceTree = "<group>"; };
-		4246C06C268B13F4009C2497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3237C9627AA805000A67E20 /* Swifty Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_CompanionApp.swift; sourceTree = "<group>"; };
+		D3237C9B27AA805000A67E20 /* SearchLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLogins.swift; sourceTree = "<group>"; };
+		D3237C9D27AA805200A67E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3237CA027AA805200A67E20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3237CA727AA807100A67E20 /* Swifty-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Companion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D3237CA827AA808800A67E20 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D34F7CBE27BC3F20004FB8A4 /* Proxima-Soft-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Soft-Bold.otf"; sourceTree = "<group>"; };
+		D34F7CBF27BC3F20004FB8A4 /* Proxima-Soft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Soft-Regular.otf"; sourceTree = "<group>"; };
+		D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D3B6D27C27D7F51200DB0C86 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4246C042268B13F2009C2497 /* Frameworks */ = {
+		D3237C9327AA805000A67E20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C058268B13F4009C2497 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C063268B13F4009C2497 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D3237CAB27AA83D100A67E20 /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4246C03C268B13F2009C2497 = {
+		D3237C8D27AA805000A67E20 = {
 			isa = PBXGroup;
 			children = (
-				4246C047268B13F2009C2497 /* Swifty Companion */,
-				4246C05E268B13F4009C2497 /* Swifty CompanionTests */,
-				4246C069268B13F4009C2497 /* Swifty CompanionUITests */,
-				4246C046268B13F2009C2497 /* Products */,
+				D3237CA827AA808800A67E20 /* Config.xcconfig */,
+				D3237C9827AA805000A67E20 /* Swifty Companion */,
+				D3237C9727AA805000A67E20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4246C046268B13F2009C2497 /* Products */ = {
+		D3237C9727AA805000A67E20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4246C045268B13F2009C2497 /* Swifty Companion.app */,
-				4246C05B268B13F4009C2497 /* Swifty CompanionTests.xctest */,
-				4246C066268B13F4009C2497 /* Swifty CompanionUITests.xctest */,
+				D3237C9627AA805000A67E20 /* Swifty Companion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4246C047268B13F2009C2497 /* Swifty Companion */ = {
+		D3237C9827AA805000A67E20 /* Swifty Companion */ = {
 			isa = PBXGroup;
 			children = (
-				4246C048268B13F2009C2497 /* AppDelegate.swift */,
-				4246C04A268B13F2009C2497 /* SceneDelegate.swift */,
-				4246C04C268B13F2009C2497 /* ViewController.swift */,
-				4246C04E268B13F2009C2497 /* Main.storyboard */,
-				4246C051268B13F4009C2497 /* Assets.xcassets */,
-				4246C053268B13F4009C2497 /* LaunchScreen.storyboard */,
-				4246C056268B13F4009C2497 /* Info.plist */,
+				D3B6D27927D7F49400DB0C86 /* Main */,
+				D34F7CB927BC3C2B004FB8A4 /* Fonts */,
+				D3237CA727AA807100A67E20 /* Swifty-Companion-Info.plist */,
+				D3237C9D27AA805200A67E20 /* Assets.xcassets */,
+				D3237C9F27AA805200A67E20 /* Preview Content */,
 			);
 			path = "Swifty Companion";
 			sourceTree = "<group>";
 		};
-		4246C05E268B13F4009C2497 /* Swifty CompanionTests */ = {
+		D3237C9F27AA805200A67E20 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4246C05F268B13F4009C2497 /* Swifty_CompanionTests.swift */,
-				4246C061268B13F4009C2497 /* Info.plist */,
+				D3237CA027AA805200A67E20 /* Preview Assets.xcassets */,
 			);
-			path = "Swifty CompanionTests";
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4246C069268B13F4009C2497 /* Swifty CompanionUITests */ = {
+		D34F7CB927BC3C2B004FB8A4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4246C06A268B13F4009C2497 /* Swifty_CompanionUITests.swift */,
-				4246C06C268B13F4009C2497 /* Info.plist */,
+				D34F7CBE27BC3F20004FB8A4 /* Proxima-Soft-Bold.otf */,
+				D34F7CBF27BC3F20004FB8A4 /* Proxima-Soft-Regular.otf */,
 			);
-			path = "Swifty CompanionUITests";
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D3B6D27927D7F49400DB0C86 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6D28027D8BE2700DB0C86 /* UI */,
+				D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */,
+				D3B6D27C27D7F51200DB0C86 /* Styles.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D3B6D28027D8BE2700DB0C86 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */,
+				D3237C9B27AA805000A67E20 /* SearchLogins.swift */,
+				D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4246C044268B13F2009C2497 /* Swifty Companion */ = {
+		D3237C9527AA805000A67E20 /* Swifty Companion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4246C06F268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty Companion" */;
+			buildConfigurationList = D3237CA427AA805200A67E20 /* Build configuration list for PBXNativeTarget "Swifty Companion" */;
 			buildPhases = (
-				4246C041268B13F2009C2497 /* Sources */,
-				4246C042268B13F2009C2497 /* Frameworks */,
-				4246C043268B13F2009C2497 /* Resources */,
+				D3237C9227AA805000A67E20 /* Sources */,
+				D3237C9327AA805000A67E20 /* Frameworks */,
+				D3237C9427AA805000A67E20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Swifty Companion";
+			packageProductDependencies = (
+				D3237CAA27AA83D100A67E20 /* OAuth2 */,
+			);
 			productName = "Swifty Companion";
-			productReference = 4246C045268B13F2009C2497 /* Swifty Companion.app */;
+			productReference = D3237C9627AA805000A67E20 /* Swifty Companion.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4246C05A268B13F4009C2497 /* Swifty CompanionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4246C072268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty CompanionTests" */;
-			buildPhases = (
-				4246C057268B13F4009C2497 /* Sources */,
-				4246C058268B13F4009C2497 /* Frameworks */,
-				4246C059268B13F4009C2497 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4246C05D268B13F4009C2497 /* PBXTargetDependency */,
-			);
-			name = "Swifty CompanionTests";
-			productName = "Swifty CompanionTests";
-			productReference = 4246C05B268B13F4009C2497 /* Swifty CompanionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4246C065268B13F4009C2497 /* Swifty CompanionUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4246C075268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty CompanionUITests" */;
-			buildPhases = (
-				4246C062268B13F4009C2497 /* Sources */,
-				4246C063268B13F4009C2497 /* Frameworks */,
-				4246C064268B13F4009C2497 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4246C068268B13F4009C2497 /* PBXTargetDependency */,
-			);
-			name = "Swifty CompanionUITests";
-			productName = "Swifty CompanionUITests";
-			productReference = 4246C066268B13F4009C2497 /* Swifty CompanionUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4246C03D268B13F2009C2497 /* Project object */ = {
+		D3237C8E27AA805000A67E20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					4246C044268B13F2009C2497 = {
-						CreatedOnToolsVersion = 12.5.1;
-					};
-					4246C05A268B13F4009C2497 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 4246C044268B13F2009C2497;
-					};
-					4246C065268B13F4009C2497 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 4246C044268B13F2009C2497;
+					D3237C9527AA805000A67E20 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 4246C040268B13F2009C2497 /* Build configuration list for PBXProject "Swifty Companion" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = D3237C9127AA805000A67E20 /* Build configuration list for PBXProject "Swifty Companion" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 4246C03C268B13F2009C2497;
-			productRefGroup = 4246C046268B13F2009C2497 /* Products */;
+			mainGroup = D3237C8D27AA805000A67E20;
+			packageReferences = (
+				D3237CA927AA83D100A67E20 /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
+			productRefGroup = D3237C9727AA805000A67E20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4246C044268B13F2009C2497 /* Swifty Companion */,
-				4246C05A268B13F4009C2497 /* Swifty CompanionTests */,
-				4246C065268B13F4009C2497 /* Swifty CompanionUITests */,
+				D3237C9527AA805000A67E20 /* Swifty Companion */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4246C043268B13F2009C2497 /* Resources */ = {
+		D3237C9427AA805000A67E20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4246C055268B13F4009C2497 /* LaunchScreen.storyboard in Resources */,
-				4246C052268B13F4009C2497 /* Assets.xcassets in Resources */,
-				4246C050268B13F2009C2497 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C059268B13F4009C2497 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C064268B13F4009C2497 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D3237CA127AA805200A67E20 /* Preview Assets.xcassets in Resources */,
+				D34F7CC027BC3F20004FB8A4 /* Proxima-Soft-Bold.otf in Resources */,
+				D3237C9E27AA805200A67E20 /* Assets.xcassets in Resources */,
+				D34F7CC127BC3F20004FB8A4 /* Proxima-Soft-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4246C041268B13F2009C2497 /* Sources */ = {
+		D3237C9227AA805000A67E20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4246C04D268B13F2009C2497 /* ViewController.swift in Sources */,
-				4246C049268B13F2009C2497 /* AppDelegate.swift in Sources */,
-				4246C04B268B13F2009C2497 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C057268B13F4009C2497 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4246C060268B13F4009C2497 /* Swifty_CompanionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4246C062268B13F4009C2497 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4246C06B268B13F4009C2497 /* Swifty_CompanionUITests.swift in Sources */,
+				D3237C9C27AA805000A67E20 /* SearchLogins.swift in Sources */,
+				D3B6D27B27D7F4D000DB0C86 /* NetworkService.swift in Sources */,
+				D3237C9A27AA805000A67E20 /* Swifty_CompanionApp.swift in Sources */,
+				D3B6D27F27D8BE1B00DB0C86 /* UserInfo.swift in Sources */,
+				D3B6D27D27D7F51200DB0C86 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4246C05D268B13F4009C2497 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4246C044268B13F2009C2497 /* Swifty Companion */;
-			targetProxy = 4246C05C268B13F4009C2497 /* PBXContainerItemProxy */;
-		};
-		4246C068268B13F4009C2497 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4246C044268B13F2009C2497 /* Swifty Companion */;
-			targetProxy = 4246C067268B13F4009C2497 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4246C04E268B13F2009C2497 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4246C04F268B13F2009C2497 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4246C053268B13F4009C2497 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4246C054268B13F4009C2497 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		4246C06D268B13F4009C2497 /* Debug */ = {
+		D3237CA227AA805200A67E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3237CA827AA808800A67E20 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -366,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,13 +263,14 @@
 			};
 			name = Debug;
 		};
-		4246C06E268B13F4009C2497 /* Release */ = {
+		D3237CA327AA805200A67E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3237CA827AA808800A67E20 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -421,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -431,168 +319,109 @@
 			};
 			name = Release;
 		};
-		4246C070268B13F4009C2497 /* Debug */ = {
+		D3237CA527AA805200A67E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty Companion/Info.plist";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swifty Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = 9TGM2X4VQU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swifty-Companion-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-Companion";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "school21-projects.Swifty-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		4246C071268B13F4009C2497 /* Release */ = {
+		D3237CA627AA805200A67E20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty Companion/Info.plist";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swifty Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = 9TGM2X4VQU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swifty-Companion-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-Companion";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "school21-projects.Swifty-Companion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4246C073268B13F4009C2497 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty CompanionTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-CompanionTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swifty Companion.app/Swifty Companion";
-			};
-			name = Debug;
-		};
-		4246C074268B13F4009C2497 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty CompanionTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-CompanionTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swifty Companion.app/Swifty Companion";
-			};
-			name = Release;
-		};
-		4246C076268B13F4009C2497 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty CompanionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-CompanionUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Swifty Companion";
-			};
-			name = Debug;
-		};
-		4246C077268B13F4009C2497 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRND9RX9N3;
-				INFOPLIST_FILE = "Swifty CompanionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.school21.Swifty-CompanionUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Swifty Companion";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4246C040268B13F2009C2497 /* Build configuration list for PBXProject "Swifty Companion" */ = {
+		D3237C9127AA805000A67E20 /* Build configuration list for PBXProject "Swifty Companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4246C06D268B13F4009C2497 /* Debug */,
-				4246C06E268B13F4009C2497 /* Release */,
+				D3237CA227AA805200A67E20 /* Debug */,
+				D3237CA327AA805200A67E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4246C06F268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty Companion" */ = {
+		D3237CA427AA805200A67E20 /* Build configuration list for PBXNativeTarget "Swifty Companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4246C070268B13F4009C2497 /* Debug */,
-				4246C071268B13F4009C2497 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4246C072268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty CompanionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4246C073268B13F4009C2497 /* Debug */,
-				4246C074268B13F4009C2497 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4246C075268B13F4009C2497 /* Build configuration list for PBXNativeTarget "Swifty CompanionUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4246C076268B13F4009C2497 /* Debug */,
-				4246C077268B13F4009C2497 /* Release */,
+				D3237CA527AA805200A67E20 /* Debug */,
+				D3237CA627AA805200A67E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3237CA927AA83D100A67E20 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3237CAA27AA83D100A67E20 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3237CA927AA83D100A67E20 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4246C03D268B13F2009C2497 /* Project object */;
+	rootObject = D3237C8E27AA805000A67E20 /* Project object */;
 }
