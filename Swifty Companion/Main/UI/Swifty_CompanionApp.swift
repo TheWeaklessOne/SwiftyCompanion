@@ -49,18 +49,15 @@ struct Swifty_CompanionApp: App {
 				}
 			}
 			.onAppear {
-				loggedIn = networkService.isAuthorized
+				Task {
+					loggedIn = await networkService.updateAccessTokenIfNeeded()
+				}
 			}
 			.alert("Что-то пошло не так", isPresented: $isErrorAlertPresented) {
 				Button("Жаль", role: .cancel) { }
 			}
-			.fullScreenCover(isPresented: $loggedIn, content: UserInfo.init)
+			.fullScreenCover(isPresented: $loggedIn, content: SearchLogins.init)
 			.environmentObject(networkService)
 		}
 	}
-}
-
-struct Jopa {
-
-	
 }

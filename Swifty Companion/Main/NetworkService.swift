@@ -9,6 +9,9 @@ import OAuth2
 import Foundation
 
 final class NetworkService: ObservableObject {
+
+	// MARK: Private Properties
+
 	private let intraSecret = Bundle.main.object(forInfoDictionaryKey: "INTRA_SECRET") as! String? ?? ""
 	private let intraUid = Bundle.main.object(forInfoDictionaryKey: "INTRA_UID") as! String? ?? ""
 	private let pathConstant = "https://api.intra.42.fr"
@@ -16,9 +19,7 @@ final class NetworkService: ObservableObject {
 
 	private let oauth: OAuth2
 
-	var isAuthorized: Bool {
-		oauth.refreshToken != nil
-	}
+	// MARK: Initialize
 
 	init() {
 		let oauthSettings: [String: Any] = [
@@ -27,11 +28,14 @@ final class NetworkService: ObservableObject {
 			"authorize_uri": "https://api.intra.42.fr/oauth/authorize",
 			"token_uri": "https://api.intra.42.fr/oauth/token",
 			"redirect_uris": ["swifty-companion://oauth-callback"],
+			"secret_in_body": true
 		]
 
 		oauth = OAuth2CodeGrant(settings: oauthSettings)
 		oauth.logger = OAuth2DebugLogger(.trace)
 	}
+
+	// MARK: Internal Methods
 
 	func handleRedirectURL(for url: URL) throws {
 		do {
@@ -56,21 +60,32 @@ final class NetworkService: ObservableObject {
 	}
 
 	func apiCall<T: Decodable>(for endpoint: String, with params: [String: String]? = nil) async -> T? {
-		var request = self.oauth.request(forURL: URL(string: pathConstant + endpoint)!)
+		guard await updateAccessTokenIfNeeded() == true,
+			  let url = URL(string: pathConstant + endpoint) else {
+			return nil
+		}
+
+		var request = self.oauth.request(forURL: url)
 
 		params?.forEach {
 			request.addValue($0.value, forHTTPHeaderField: $0.key)
 		}
 
 		return await withCheckedContinuation { continuation in
-			print(request)
-
 			oauth.session.dataTask(with: request) { data, response, error in
 				if let data = data {
 					let object = try? self.decoder.decode(T.self, from: data)
 					continuation.resume(returning: object)
 				}
 			}.resume()
+		}
+	}
+
+	func updateAccessTokenIfNeeded() async -> Bool {
+		return await withCheckedContinuation { continuation in
+			oauth.tryToObtainAccessTokenIfNeeded { json, error in
+				continuation.resume(returning: json != nil && error == nil)
+			}
 		}
 	}
 }
