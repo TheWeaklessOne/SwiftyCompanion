@@ -9,55 +9,74 @@ import SwiftUI
 
 @main
 struct Swifty_CompanionApp: App {
-	@StateObject var networkService = NetworkService()
 
-	@State private var isErrorAlertPresented = false
+	// MARK: Private Properties
 
-	@State var loggedIn = false
+	private let networkService = NetworkService()
+
+	// MARK: State Properties
+
+	@State
+	private var isErrorAlertPresented = false
+	
+	@State
+	var loggedIn = false
+
+	// MARK: Scene
 
 	var body: some Scene {
 		WindowGroup {
-			ZStack(alignment: .bottom) {
-				LinearGradient.darkGradient.ignoresSafeArea()
-
-				VStack(alignment: .center) {
-					Spacer()
-
-					Text("Swifty Companion")
-						.font(.largeTitle)
-						.foregroundColor(.white)
-
-					Spacer()
-
-					Button("Войти".uppercased()) {
-						Task {
-							if let _ = await networkService.authorize() {
-								loggedIn.toggle()
-							}
-						}
+			mainScreen
+				.onReceive(networkService.$isSessionActive) { isActive in
+					self.loggedIn = isActive
+				}
+				.onOpenURL {
+					do {
+						try networkService.handleRedirectURL(for: $0)
+					} catch {
+						isErrorAlertPresented.toggle()
 					}
-					.buttonStyle(IntraMain())
-					.padding(.bottom, 48)
-					.disabled(loggedIn)
 				}
-			}
-			.onOpenURL {
-				do {
-					try networkService.handleRedirectURL(for: $0)
-				} catch {
-					isErrorAlertPresented.toggle()
+				.onAppear {
+					Task {
+						 await networkService.updateAccessTokenIfNeeded()
+					}
 				}
-			}
-			.onAppear {
-				Task {
-					loggedIn = await networkService.updateAccessTokenIfNeeded()
+				.alert("Что-то пошло не так", isPresented: $isErrorAlertPresented) {
+					Button("Жаль", role: .cancel) { }
 				}
+				.fullScreenCover(isPresented: $loggedIn) {
+					SearchUsersView(
+						viewModel: SearchUsersView.ViewModel(networkService: networkService)
+					)
+				}
+		}
+	}
+
+	// MARK: View Builders
+
+	var mainScreen: some View {
+		ZStack(alignment: .bottom) {
+			LinearGradient.darkGradient.ignoresSafeArea()
+
+			VStack(alignment: .center) {
+				Spacer()
+
+				Text("Swifty Companion")
+					.font(.largeTitle)
+					.foregroundColor(.white)
+
+				Spacer()
+
+				Button("Войти".uppercased()) {
+					Task {
+						await networkService.authorize()
+					}
+				}
+				.buttonStyle(IntraMain())
+				.padding(.bottom, 48)
+				.disabled(loggedIn)
 			}
-			.alert("Что-то пошло не так", isPresented: $isErrorAlertPresented) {
-				Button("Жаль", role: .cancel) { }
-			}
-			.fullScreenCover(isPresented: $loggedIn, content: SearchLogins.init)
-			.environmentObject(networkService)
 		}
 	}
 }

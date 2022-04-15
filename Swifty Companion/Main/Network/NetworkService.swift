@@ -10,6 +10,11 @@ import Foundation
 
 final class NetworkService: ObservableObject {
 
+	// MARK: Publisher
+	
+	@Published @MainActor
+	private(set) var isSessionActive = false
+	
 	// MARK: Private Properties
 
 	private let intraSecret = Bundle.main.object(forInfoDictionaryKey: "INTRA_SECRET") as! String? ?? ""
@@ -47,9 +52,15 @@ final class NetworkService: ObservableObject {
 
 	typealias AuthorizeCompletion = ((OAuth2JSON?, OAuth2Error?) -> Void)
 
+	@discardableResult
 	func authorize(params: OAuth2StringDict? = nil) async -> OAuth2JSON? {
 		await withCheckedContinuation { continuation in
-			oauth.authorize(params: params) { json, _ in
+			oauth.authorize(params: params) { json, error in
+				let result = json != nil && error == nil
+
+				DispatchQueue.main.async {
+					self.isSessionActive = result
+				}
 				continuation.resume(returning: json)
 			}
 		}
@@ -57,11 +68,18 @@ final class NetworkService: ObservableObject {
 
 	func logout() {
 		oauth.forgetTokens()
+
+		DispatchQueue.main.async {
+			self.isSessionActive = self.oauth.isAuthorizing
+		}
 	}
 
 	func apiCall<T: Decodable>(for endpoint: String, with params: [String: String]? = nil) async -> T? {
 		guard await updateAccessTokenIfNeeded() == true,
 			  let url = URL(string: pathConstant + endpoint) else {
+			DispatchQueue.main.async {
+				self.isSessionActive = false
+			}
 			return nil
 		}
 
@@ -81,10 +99,16 @@ final class NetworkService: ObservableObject {
 		}
 	}
 
+	@discardableResult
 	func updateAccessTokenIfNeeded() async -> Bool {
 		return await withCheckedContinuation { continuation in
 			oauth.tryToObtainAccessTokenIfNeeded { json, error in
-				continuation.resume(returning: json != nil && error == nil)
+				let result = json != nil && error == nil
+
+				DispatchQueue.main.async {
+					self.isSessionActive = result
+				}
+				continuation.resume(returning: result)
 			}
 		}
 	}

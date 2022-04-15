@@ -7,31 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31E43742806F6D600685A47 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E43732806F6D600685A47 /* Throwable.swift */; };
+		D31E437A2807002800685A47 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E43792807002800685A47 /* Extensions.swift */; };
+		D31E437D2808075300685A47 /* SearchUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E437C2808075300685A47 /* SearchUsersViewModel.swift */; };
+		D31E4380280807A100685A47 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E437F280807A100685A47 /* UserDetailViewModel.swift */; };
+		D31E4382280807FD00685A47 /* SearchUsersDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E4381280807FD00685A47 /* SearchUsersDataStructures.swift */; };
+		D31E43872808141900685A47 /* UserDetailDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E43862808141900685A47 /* UserDetailDataStructures.swift */; };
 		D3237C9A27AA805000A67E20 /* Swifty_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */; };
-		D3237C9C27AA805000A67E20 /* SearchLogins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3237C9B27AA805000A67E20 /* SearchLogins.swift */; };
+		D3237C9C27AA805000A67E20 /* SearchUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3237C9B27AA805000A67E20 /* SearchUsersView.swift */; };
 		D3237C9E27AA805200A67E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3237C9D27AA805200A67E20 /* Assets.xcassets */; };
 		D3237CA127AA805200A67E20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3237CA027AA805200A67E20 /* Preview Assets.xcassets */; };
-		D3237CAB27AA83D100A67E20 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = D3237CAA27AA83D100A67E20 /* OAuth2 */; };
 		D34F7CC027BC3F20004FB8A4 /* Proxima-Soft-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D34F7CBE27BC3F20004FB8A4 /* Proxima-Soft-Bold.otf */; };
 		D34F7CC127BC3F20004FB8A4 /* Proxima-Soft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D34F7CBF27BC3F20004FB8A4 /* Proxima-Soft-Regular.otf */; };
 		D3B6D27B27D7F4D000DB0C86 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */; };
 		D3B6D27D27D7F51200DB0C86 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27C27D7F51200DB0C86 /* Styles.swift */; };
-		D3B6D27F27D8BE1B00DB0C86 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */; };
+		D3B6D27F27D8BE1B00DB0C86 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6D27E27D8BE1B00DB0C86 /* UserDetailView.swift */; };
+		D3EA9D632806D92900736C7C /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = D3EA9D622806D92900736C7C /* OAuth2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D31E43732806F6D600685A47 /* Throwable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		D31E43792807002800685A47 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D31E437C2808075300685A47 /* SearchUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewModel.swift; sourceTree = "<group>"; };
+		D31E437F280807A100685A47 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		D31E4381280807FD00685A47 /* SearchUsersDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersDataStructures.swift; sourceTree = "<group>"; };
+		D31E43862808141900685A47 /* UserDetailDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailDataStructures.swift; sourceTree = "<group>"; };
 		D3237C9627AA805000A67E20 /* Swifty Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_CompanionApp.swift; sourceTree = "<group>"; };
-		D3237C9B27AA805000A67E20 /* SearchLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLogins.swift; sourceTree = "<group>"; };
+		D3237C9B27AA805000A67E20 /* SearchUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersView.swift; sourceTree = "<group>"; };
 		D3237C9D27AA805200A67E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3237CA027AA805200A67E20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3237CA727AA807100A67E20 /* Swifty-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swifty-Companion-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D3237CA827AA808800A67E20 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D34F7CBE27BC3F20004FB8A4 /* Proxima-Soft-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Soft-Bold.otf"; sourceTree = "<group>"; };
 		D34F7CBF27BC3F20004FB8A4 /* Proxima-Soft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Soft-Regular.otf"; sourceTree = "<group>"; };
-		D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; usesTabs = 1; };
 		D3B6D27C27D7F51200DB0C86 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-		D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		D3B6D27E27D8BE1B00DB0C86 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,13 +51,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3237CAB27AA83D100A67E20 /* OAuth2 in Frameworks */,
+				D3EA9D632806D92900736C7C /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31E43722806F6C600685A47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */,
+				D31E43732806F6D600685A47 /* Throwable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D31E437B2808073D00685A47 /* SearchUsers */ = {
+			isa = PBXGroup;
+			children = (
+				D3237C9B27AA805000A67E20 /* SearchUsersView.swift */,
+				D31E437C2808075300685A47 /* SearchUsersViewModel.swift */,
+				D31E4381280807FD00685A47 /* SearchUsersDataStructures.swift */,
+			);
+			path = SearchUsers;
+			sourceTree = "<group>";
+		};
+		D31E437E2808079000685A47 /* UserDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6D27E27D8BE1B00DB0C86 /* UserDetailView.swift */,
+				D31E437F280807A100685A47 /* UserDetailViewModel.swift */,
+				D31E43862808141900685A47 /* UserDetailDataStructures.swift */,
+			);
+			path = UserDetailView;
+			sourceTree = "<group>";
+		};
 		D3237C8D27AA805000A67E20 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +136,9 @@
 		D3B6D27927D7F49400DB0C86 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D31E43722806F6C600685A47 /* Network */,
 				D3B6D28027D8BE2700DB0C86 /* UI */,
-				D3B6D27A27D7F4D000DB0C86 /* NetworkService.swift */,
-				D3B6D27C27D7F51200DB0C86 /* Styles.swift */,
+				D31E43792807002800685A47 /* Extensions.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -105,9 +146,10 @@
 		D3B6D28027D8BE2700DB0C86 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D31E437B2808073D00685A47 /* SearchUsers */,
+				D31E437E2808079000685A47 /* UserDetailView */,
 				D3237C9927AA805000A67E20 /* Swifty_CompanionApp.swift */,
-				D3237C9B27AA805000A67E20 /* SearchLogins.swift */,
-				D3B6D27E27D8BE1B00DB0C86 /* UserInfo.swift */,
+				D3B6D27C27D7F51200DB0C86 /* Styles.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -129,7 +171,7 @@
 			);
 			name = "Swifty Companion";
 			packageProductDependencies = (
-				D3237CAA27AA83D100A67E20 /* OAuth2 */,
+				D3EA9D622806D92900736C7C /* OAuth2 */,
 			);
 			productName = "Swifty Companion";
 			productReference = D3237C9627AA805000A67E20 /* Swifty Companion.app */;
@@ -161,6 +203,7 @@
 			mainGroup = D3237C8D27AA805000A67E20;
 			packageReferences = (
 				D3237CA927AA83D100A67E20 /* XCRemoteSwiftPackageReference "OAuth2" */,
+				D3EA9D612806D92900736C7C /* XCRemoteSwiftPackageReference "OAuth2" */,
 			);
 			productRefGroup = D3237C9727AA805000A67E20 /* Products */;
 			projectDirPath = "";
@@ -190,11 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3237C9C27AA805000A67E20 /* SearchLogins.swift in Sources */,
+				D31E4380280807A100685A47 /* UserDetailViewModel.swift in Sources */,
+				D31E4382280807FD00685A47 /* SearchUsersDataStructures.swift in Sources */,
+				D3237C9C27AA805000A67E20 /* SearchUsersView.swift in Sources */,
+				D31E437D2808075300685A47 /* SearchUsersViewModel.swift in Sources */,
 				D3B6D27B27D7F4D000DB0C86 /* NetworkService.swift in Sources */,
 				D3237C9A27AA805000A67E20 /* Swifty_CompanionApp.swift in Sources */,
-				D3B6D27F27D8BE1B00DB0C86 /* UserInfo.swift in Sources */,
+				D31E43872808141900685A47 /* UserDetailDataStructures.swift in Sources */,
+				D3B6D27F27D8BE1B00DB0C86 /* UserDetailView.swift in Sources */,
+				D31E43742806F6D600685A47 /* Throwable.swift in Sources */,
 				D3B6D27D27D7F51200DB0C86 /* Styles.swift in Sources */,
+				D31E437A2807002800685A47 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +386,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +418,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,12 +464,20 @@
 				version = 5.2.0;
 			};
 		};
+		D3EA9D612806D92900736C7C /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D3237CAA27AA83D100A67E20 /* OAuth2 */ = {
+		D3EA9D622806D92900736C7C /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3237CA927AA83D100A67E20 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			package = D3EA9D612806D92900736C7C /* XCRemoteSwiftPackageReference "OAuth2" */;
 			productName = OAuth2;
 		};
 /* End XCSwiftPackageProductDependency section */
