@@ -28,7 +28,6 @@ extension UserDetailView {
 		@Published
 		var presentSkillsSheet = false
 
-
 		// MARK: Initialize
 
 		init(
@@ -36,6 +35,5 @@ extension UserDetailView {
 		) {
 			self.user = user
 		}
-
 	}
 }
